@@ -1,7 +1,10 @@
 {
-  "name": "provision-dev",
-  "packageManager": "yarn@4.9.2",
-  "devDependencies": {
-    "@biomejs/biome": "2.1.2"
-  }
+    "name": "provision-dev",
+    "author": {
+        "name": "Adams Banjo"
+    },
+    "packageManager": "yarn@4.9.2",
+    "devDependencies": {
+        "@biomejs/biome": "2.1.2"
+    }
 }

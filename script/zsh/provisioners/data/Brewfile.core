@@ -1,0 +1,18 @@
+# Install core tooling
+# git is installed from homebrew since it is more up-to-date than the one from Mac's Command Line Tools
+brew "coreutils"
+brew "git"
+brew "gh"
+brew "yq"
+brew "jq"
+
+brew "shfmt"
+brew "shellcheck"
+brew "actionlint"
+
+brew "go@1.24.5"
+brew "pyenv"
+
+# Local SSL certificates
+brew "mkcert"
+brew "nss" # for Firefox support w/ mkcert

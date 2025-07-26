@@ -1,0 +1,11 @@
+# node-canvas dependencies
+
+brew "pkg-config"
+brew "cairo"
+brew "pango"
+brew "libpng"
+brew "giflib"
+brew "librsvg"
+brew "pixman"
+brew "python-setuptools"
+brew "jpeg" // might not be stable if old version of jpeg-turbo exists on user's machine
