@@ -35,6 +35,6 @@ run_provisioner "oh-my-zsh" ./script/zsh/provisioners/omz.sh
 run_provisioner "homebrew" ./script/zsh/provisioners/brew.sh
 run_provisioner "git" ./script/zsh/provisioners/git.sh
 run_provisioner "node" ./script/zsh/provisioners/node.sh
-run_provisioner "optional" ./script/zsh/provisioners/optional.sh
+run_provisioner "optional-tools" ./script/zsh/provisioners/optional.sh
 
 print_success "Dev tooling initialization complete"

@@ -14,7 +14,7 @@ git config --global core.ignorecase false
 if [[ "https://github.com/" != "$(git config --global --get url."git@github.com:".insteadOf || true)" ]]; then
     git config --global --replace-all url."git@github.com:".insteadOf "https://github.com/"
 fi
-if [[ "https://github.com/" != "$(git config --global --get url."ssh://git@github.com/" .insteadOf "https://github.com/" || true)" ]]; then
+if [[ "https://github.com/" != "$(git config --global --get url."ssh://git@github.com/".insteadOf "https://github.com/" || true)" ]]; then
     git config --global --replace-all url."ssh://git@github.com/".insteadOf "https://github.com/"
 fi
 
@@ -33,6 +33,9 @@ while [[ -z "$(git config --global --get user.name || true)" ]]; do
 
     git config --global user.name "$fullname"
 done
+
+echo "Your git email is $(git config --global --get user.email)"
+echo "Your git username is $(git config --global --get user.name)"
 
 # Login to Github and persist auth token
 # ./script/zsh/provisioners/auth-with-github.sh

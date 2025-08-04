@@ -8,3 +8,5 @@ else
 fi
 
 # SKIP_PROVISIONER="$SKIP_PROVISIONER" zsh ./script/zsh/init.sh && . ~/.zshrc
+# shellcheck disable=SC1090
+zsh ./script/zsh/init.sh && . ~/.zshrc
