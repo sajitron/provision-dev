@@ -19,17 +19,16 @@ function on_error {
     fi
 }
 
-trap on_error EXIT]
+trap on_error EXIT
 
 echo
 print_info "🏭 Development Environment Provisioner"
 echo
 print_info "Starting the development machine provisioning process."
 print_info "You can run this script at any time to keep your machine up to date."
-echo
 
 # some latter-run scripts use corepack indirectly. Disable the download prompt
-# since we often redirect stdio to /dev/nul and prompts don't work anyway.
+# since we often redirect stdio to /dev/null and prompts don't work anyway.
 export COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 
 run_provisioner "oh-my-zsh" ./script/zsh/provisioners/omz.sh

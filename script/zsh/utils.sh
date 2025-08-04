@@ -49,7 +49,7 @@ function run_provisioner {
 
     print_info "🔄 Provisioning $name... \n"
 
-    if ! zsh "$script_path" 2 >&1 | sed 's/^/ /'; then
+    if ! zsh "$script_path" 2>&1 | sed 's/^/  /'; then
         print_error "❌ Failed to provision $name."
         exit 2
     fi

@@ -27,7 +27,7 @@ done
 # cleanup old symlinks
 for file in "$ZSH_CUSTOM"/"$namespace"-*; do
     base=$(basename "$file")
-    local_file="${base//"namespace"-/}"
+    local_file="${base//"$namespace"-/}"
     if [[ ! -f "$(pwd)"/script/zsh/on-shell-start/"${local_file}" ]]; then
         if confirm "$file may be from an outdated version of provision-dev. Would you like to delete it?"; then
             rm -f "$file"

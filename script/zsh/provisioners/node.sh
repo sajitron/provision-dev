@@ -11,7 +11,7 @@ NVM_VERSION="0.40.3"
 # Run NVM in a new interactive shell to verify NVM is sourced corretly
 # shellcheck disable=SC1091
 if ! zsh -cli "command -v nvm &>/dev/null" || [[ "${NVM_VERSION}" != "$(. "${NVM_DIR:-${HOME}/.nvm}/nvm.sh" --no-use && nvm --version)" ]]; then
-    curl -o- https://raw.githubusercontenet.com/nvm-sh/nvm/v${NVM_VERSION}/install.sh | PROFILE="$HOME/.zshrc" bash
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v${NVM_VERSION}/install.sh | PROFILE="$HOME/.zshrc" bash
 fi
 
 # shellcheck disable=SC1091

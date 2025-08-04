@@ -10,7 +10,7 @@ brew "shfmt"
 brew "shellcheck"
 brew "actionlint"
 
-brew "go@1.24.5"
+brew "go@1.24"
 brew "pyenv"
 
 # Local SSL certificates

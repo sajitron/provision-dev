@@ -9,7 +9,7 @@ set -e -o pipefail
 # Ensures "~/.local/bin" is in the PATH since some tools are installed there
 if ! zsh -cli "echo $PATH | grep -q '~/.local/bin'"; then
     # shellcheck disable=SC2016
-    echo 'export PATH="$HOME/.local/bin/:$PATH"' >>"$HOME/.zshrc"
+    echo 'export PATH="$HOME/.local/bin:$PATH"' >>"$HOME/.zshrc"
 fi
 
 # shellcheck disable=SC1091
