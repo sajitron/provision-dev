@@ -23,7 +23,7 @@ if ! grep corepack "${NVM_DIR:-${HOME}/.nvm}"/default-packages >/dev/null 2>&1; 
 fi
 
 # https://nodejs.org/en/about/previous-releases
-NODE_VERSIONS=(lts/jod)
+NODE_VERSIONS=(lts/krypton)
 
 # shellcheck disable=SC2128 # zsh loop syntax not supported by shellcheck
 for node_version in $NODE_VERSIONS; do
